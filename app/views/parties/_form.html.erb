@@ -1,0 +1,47 @@
+<%= form_with(model: party) do |form| %>
+  <% if party.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(party.errors.count, "error") %> prohibited this party from being saved:</h2>
+
+      <ul>
+        <% party.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="field">
+    <%= form.label :current_chair %>
+    <%= form.text_field :current_chair %>
+  </div>
+
+  <div class="field">
+    <%= form.label :history %>
+    <%= form.rich_text_area :history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manifesto %>
+    <%= form.rich_text_area :manifesto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about %>
+    <%= form.text_area :about %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

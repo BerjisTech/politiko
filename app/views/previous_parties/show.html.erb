@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Party:</strong>
+  <%= @previous_party.party %>
+</p>
+
+<p>
+  <strong>Politician:</strong>
+  <%= @previous_party.politician %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @previous_party.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @previous_party.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_previous_party_path(@previous_party) %> |
+<%= link_to 'Back', previous_parties_path %>

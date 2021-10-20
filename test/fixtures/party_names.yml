@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  party: 
+  name: MyText
+  start_date: 2021-10-19 23:35:37
+  end_date: 2021-10-19 23:35:37
+
+two:
+  party: 
+  name: MyText
+  start_date: 2021-10-19 23:35:37
+  end_date: 2021-10-19 23:35:37

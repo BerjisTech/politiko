@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Party:</strong>
+  <%= @party_name.party %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @party_name.name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @party_name.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @party_name.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_party_name_path(@party_name) %> |
+<%= link_to 'Back', party_names_path %>

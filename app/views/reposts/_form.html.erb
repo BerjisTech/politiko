@@ -1,0 +1,32 @@
+<%= form_with(model: repost) do |form| %>
+  <% if repost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(repost.errors.count, "error") %> prohibited this repost from being saved:</h2>
+
+      <ul>
+        <% repost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content_type %>
+    <%= form.number_field :content_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

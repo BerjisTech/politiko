@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Politician:</strong>
+  <%= @chair.politician %>
+</p>
+
+<p>
+  <strong>Party:</strong>
+  <%= @chair.party %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @chair.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @chair.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_chair_path(@chair) %> |
+<%= link_to 'Back', chairs_path %>

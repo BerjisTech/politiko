@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @politician.name %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @politician.alias %>
+</p>
+
+<p>
+  <strong>Current party:</strong>
+  <%= @politician.current_party %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @politician.history %>
+</p>
+
+<p>
+  <strong>Manifesto:</strong>
+  <%= @politician.manifesto %>
+</p>
+
+<%= link_to 'Edit', edit_politician_path(@politician) %> |
+<%= link_to 'Back', politicians_path %>

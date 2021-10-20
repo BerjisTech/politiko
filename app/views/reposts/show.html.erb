@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @repost.content %>
+</p>
+
+<p>
+  <strong>Content type:</strong>
+  <%= @repost.content_type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @repost.user %>
+</p>
+
+<%= link_to 'Edit', edit_repost_path(@repost) %> |
+<%= link_to 'Back', reposts_path %>

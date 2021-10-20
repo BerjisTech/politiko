@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  party: 
+  politician: 
+  start_date: 2021-10-19 23:37:54
+  end_date: 2021-10-19 23:37:54
+
+two:
+  party: 
+  politician: 
+  start_date: 2021-10-19 23:37:54
+  end_date: 2021-10-19 23:37:54

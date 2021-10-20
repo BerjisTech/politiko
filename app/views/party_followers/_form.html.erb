@@ -1,0 +1,27 @@
+<%= form_with(model: party_follower) do |form| %>
+  <% if party_follower.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(party_follower.errors.count, "error") %> prohibited this party_follower from being saved:</h2>
+
+      <ul>
+        <% party_follower.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :party %>
+    <%= form.text_field :party %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

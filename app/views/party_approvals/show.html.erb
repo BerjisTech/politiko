@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @party_approval.user %>
+</p>
+
+<p>
+  <strong>Party:</strong>
+  <%= @party_approval.party %>
+</p>
+
+<p>
+  <strong>Approval:</strong>
+  <%= @party_approval.approval %>
+</p>
+
+<%= link_to 'Edit', edit_party_approval_path(@party_approval) %> |
+<%= link_to 'Back', party_approvals_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Party Approvals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Party</th>
+      <th>Approval</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @party_approvals.each do |party_approval| %>
+      <tr>
+        <td><%= party_approval.user %></td>
+        <td><%= party_approval.party %></td>
+        <td><%= party_approval.approval %></td>
+        <td><%= link_to 'Show', party_approval %></td>
+        <td><%= link_to 'Edit', edit_party_approval_path(party_approval) %></td>
+        <td><%= link_to 'Destroy', party_approval, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Party Approval', new_party_approval_path %>

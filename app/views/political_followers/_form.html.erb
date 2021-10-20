@@ -1,0 +1,27 @@
+<%= form_with(model: political_follower) do |form| %>
+  <% if political_follower.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(political_follower.errors.count, "error") %> prohibited this political_follower from being saved:</h2>
+
+      <ul>
+        <% political_follower.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :politician %>
+    <%= form.text_field :politician %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

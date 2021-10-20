@@ -1,0 +1,32 @@
+<%= form_with(model: party_approval) do |form| %>
+  <% if party_approval.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(party_approval.errors.count, "error") %> prohibited this party_approval from being saved:</h2>
+
+      <ul>
+        <% party_approval.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :party %>
+    <%= form.text_field :party %>
+  </div>
+
+  <div class="field">
+    <%= form.label :approval %>
+    <%= form.number_field :approval %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
